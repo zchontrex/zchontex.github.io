@@ -16,6 +16,577 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+   
+  #tableizer-table {
+    width: 100%;
+    font-size:14px;
+  	border: 1px;
+    margin:0;
+    box-sizing:border-box;
+    background-color: #ADD8E6;
+  }
+
+
+  #tableizer-table td {
+  	padding: 4px;
+  	margin: 4px;
+  	border: 1px 0;
+   background-color: #ADD8E6;
+
+  }
+  #tableizer-table th {
+       padding: 4px;
+  	margin: 4px;
+      border: 1px 0;
+position:sticky;
+  	background-color: #0000FF;
+  	color: #FFF;
+    top:0;
+
+  }
+   #tableizer-table tr:hover {
+
+     background-color: #ddd;
+     color:#FFFFFF;
+     border: 1px 0;
+   }
+  #myInput {
+    padding: 10px;
+    box-sizing: border-box;
+        width: 100%;
+        border: 1px solid #999;
+        background: #fff;
+    }
+</style>
+<h3>
+  <input id="myInput" onkeyup="myFunction()" placeholder="Cari Poli Disini..." title="Type in a name" type="text" />
+</h3>
+<table id="tableizer-table">
+  <thead>
+    <tr class="tableizer-firstrow">
+      <th>PSMF</th>
+      <th>Nama Dokter</th>
+      <th>Jam</th>
+      <th>Ket</th>
+      <th>Foto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr> 
+      
+      <td rowspan="4" style="text-align: center;">Anak</td>
+      <td>Dr. Melany Farahdila, Sp.A</td>
+
+      <td>
+
+       <a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a>
+        </td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>
+       
+      Dr. Astri Proborini, Sp.A
+      </td>
+      
+      
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+
+    <div style="height:100%;width:100%">-
+
+    </div>
+
+  </a></td>
+
+     
+
+      <td><br /></td>
+      
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Laurentia Ima Monica, Sp.A</span></td>
+
+      <td>
+         <a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">08.00-11.00
+    </div>
+  </a>
+        </td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Daendy Nova S., Sp.A</span></td>
+
+      <td> <a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+
+    <div style="height:100%;width:100%">19.00
+
+    </div>
+
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="6" style="text-align: center;">IPD</td>
+      <td>Dr. Gatot Ismanoe, S.PD, KPTI, FINASIM</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dr. Etik Mertianti, S.PD</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Dian Hasanah, S.PD</span></td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">08.00
+    </div>
+  </a></td>
+
+      <td>Kuota Habis</td>
+    </tr>
+    <tr>
+      <td>Dr. Muhammad Anshory, S.PD</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+
+    <div style="height:100%;width:100%">-
+
+    </div>
+
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Shinta Oktya, S.PD, K-HOM, FINASIM</span></td>
+
+      <td>OFF</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. dr. Nur Samsu, S.PD, K-GH</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="4" style="text-align: center;">Obgyn</td>
+      <td><span style="color: #e69138;">Dr. Anin Indriani, Sp.OG</span></td>
+
+      <td></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Nirmala Gina, Sp.OG</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Fatmasari Perdana, Sp.OG</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Subandi, Sp.OG (K)</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="text-align: center;">Bedah</td>
+      <td><span style="color: #e69138;">Dr. M. Raditya Oktifianto, Sp.B</span></td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Brahmantya Sedijono, Sp.B</span></td>
+
+      <td>OFF</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="text-align: center;">Jantung</td>
+      <td><span style="color: #e69138;">Prof. Dr. dr. Djanggan Sargowo, Sp.JP(K)</span></td>
+
+      <td>11.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Andi Wahjono Adi, Sp.JP(K)</span></td>
+
+      <td>16.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Putri Annisa Kamila, Sp.JP</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+
+    <div style="height:100%;width:100%">-
+
+    </div>
+
+  </a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="text-align: center;">Mata</td>
+      <td><span style="color: #e69138;">Dr. Faris Nufiarwan, Sp.M</span></td>
+
+      <td>10.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Yasmin Sani, Sp.M</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Catur Kurnia, Sp.M</td>
+
+      <td><br /></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="text-align: center;">Paru</td>
+      <td><span style="color: #e69138;">Dr. Sastia Rakhma, Sp.P</span></td>
+
+      <td>16.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Ungky Agus Setyawan, Sp.P(K)</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Fitri Indah Sari, Sp.P</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="4" style="text-align: center;">Saraf</td>
+      <td><span style="color: #e69138;">Dr. Aris Widayati, Sp.S</span></td>
+
+      <td>08.00</td>
+
+      <td>Kuota Habis<br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Siti Nurlaela, Sp.S</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Nova Titis, Sp.S</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. An Nissa Novrizka Sari, Sp.N</span></td>
+
+      <td>13.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="2" style="text-align: center;">Jiwa</td>
+      <td><span style="color: #e69138;">Dr. Zuhrotun Ulya, Sp.KJ</span></td>
+
+      <td>15.15</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Zain Budi, Sp.KJ</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="text-align: center;">THT</td>
+      <td>Dr. Khuznita Dasa, Sp.THT-KL</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td>Dr. Iriana Maharani, Sp.THT-KL(K)</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">Dr. Ayunita Tri Wirattami, Sp.THT-KL(K)</span></td>
+
+      <td>16.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Ortopedi</td>
+      <td><span style="color: #e69138;">Dr. Rakhmad Aditya, Sp.OT</span></td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td>Kuota Habis<br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Andrologi</td>
+      <td><span style="color: #e69138;">Dr. Dicky Faizal, Sp.And</span></td>
+
+      <td>16.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Gigi Anak</td>
+      <td>Dr. drg. Moh. Chair E, SU, Sp.KGA</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Penyakit Mulut</td>
+      <td>drg. Miftakhul Cahyani, Sp.PM</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Konservasi Gigi</td>
+      <td><span style="color: #e69138;">drg. Yuliana Ratna Kumala, Sp.KG</span></td>
+
+      <td>16.00</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Bedah Mulut</td>
+      <td>drg. Fitriana, Sp.BM</td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+    <div style="height:100%;width:100%">-
+    </div>
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td rowspan="3" style="text-align: center;">Kulit Kelamin</td>
+      <td><span style="color: #e69138;">dr. Martina Rahmi, Sp.KK</span></td>
+
+      <td><a href="https://www.instagram.com/p/CgOF0TstDxS/?igshid=YmMyMTA2M2Y=">
+
+    <div style="height:100%;width:100%">-
+
+    </div>
+
+  </a></td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">dr. Marissa Astari, M.Ked, Klin, Sp.DV</span></td>
+
+      <td>10.30</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td><span style="color: #e69138;">dr. Vidya Hana Dwi A.,M.Sc Sp.DV</span></td>
+
+      <td>15.30</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Nyeri&nbsp;</td>
+      <td><span style="color: #e69138;">dr. Ristiawan Muji, Sp.An.KMN</span></td>
+
+      <td>OFF</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Psikologi Klinis</td>
+      <td><span style="color: #e69138;">Wulida Azmiyya El Rifqiya, S.Psi, M.Psi</span></td>
+
+      <td>OFF</td>
+
+      <td><br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">Rehab Medik</td>
+      <td><span style="color: #e69138;"></span></td>
+
+      <td>Kuota Habis</td>
+
+      <td><br /></td>
+    </tr>
+  </tbody>
+</table>
+<script>
+     function myFunction() {
+
+    // Declare variables
+    var input = document.getElementById("myInput");
+    var filter = input.value.trim().toUpperCase();
+    var table = document.getElementById("tableizer-table");
+    var trs = table.tBodies[0].getElementsByTagName("tr");
+    var ths = table.tHead.getElementsByTagName("th");
+
+    var rowSpan = 1;
+    var rowSpanData = '';
+
+    // Loop through first tbody's rows
+    for (var i = 0; i < trs.length; i++) {
+
+      // define the row's cells
+      var tds = trs[i].getElementsByTagName("td");
+
+      // hide the row
+      trs[i].style.display = "none";
+
+      // loop through row cells
+      for (var i2 = 0; i2 < tds.length; i2++) {
+
+        if(filter!=""){
+          if(i2==0 && tds.length == ths.length){
+            rowSpanData = tds[i2].innerHTML;
+          }
+          // if there's a match
+          if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+
+            // show the row
+            trs[i].style.display = "";
+
+            if(tds.length == ths.length && tds[0].hasAttribute("rowspan") &&  tds[0].getAttribute("rowspan") != 1){
+              tds[0].setAttribute("originalRowSpan", tds[0].getAttribute("rowspan"));
+              tds[0].setAttribute("rowspan", 1);
+            }
+            if(tds.length < ths.length){
+              var newTd = trs[i].insertCell(0);
+              newTd.classList.add("removeMe");
+              newTd.innerHTML= rowSpanData;
+            }
+            // skip to the next row
+            continue;
+
+          }
+
+        }else{
+            trs[i].style.display = "";
+            if(tds[i2].hasAttribute("rowspan")){
+              tds[i2].setAttribute("rowspan", tds[i2].getAttribute("originalRowSpan"));
+            }else if(tds[i2].classList.contains("removeMe")){
+              trs[i].deleteCell(0);
+            }
+        }
+      }
+    }
+
+  }
+</script>
+
 }
 
 .header {
