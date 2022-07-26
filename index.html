@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security RSUB</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(77, 79, 87, 0.7), rgba(69, 75, 99, 0.7)), url(image/gambarLatar.jpg);
+    background-image: radial-gradient(rgba(56, 57, 63, 0.7), rgba(51, 43, 39, 0.7)), url(image/gambarLatar.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 100px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #367de7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 64px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #367de7;
+    background: #367de7;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #367de7;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.campus {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(46, 13, 233, 0.678);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    margin-top: 20px;
+
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icon .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart-o {
+    color: #f44336;
+}
+
+.sub-header {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(image/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1 {
+    margin-top: 10px;
+}
+
+.red-btn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    padding: 3px 0;
+}
+
+table th {
+    text-align: center;
+}
+
+table,
+td {
+    border: 2px solid rgb(43, 41, 41);
+    text-align: left;
+    font-weight: bold;
+}
+
+table {
+    overflow-x:auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+
+th {
+    background-color: #1422ee;
+    border: 2px solid rgb(7, 7, 7);
+    padding: 10px;
+    border-bottom: 1px solid rgb(65, 62, 62);
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+
+td {
+    padding: 5px;
+    border-bottom: 1px solid rgb(61, 56, 56);
+}
+
+tr:hover {
+    background-color: #455bd8;
+}
+@media(max-width:700px) {
+    table, th, tr, td {
+        flex-direction: column;
+    }
+}
+.table-search {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+.table-search:hover{
+    background-color: #367de7;
+    font-size: xx-large;
+    color: black;
+}
+        table.tableizer-table {
+          
+            font-size: 10px;
+            border: 1px solid #CCC; 
+            font-family: Arial, Helvetica, sans-serif;
+            
+        } 	
+        #tableizer-table td {
+            padding: 1px;
+            margin: 8px;
+            border: 1px solid #CCC;
+        }
+        #tableizer-table th {
+            background-color: #104E8B; 
+            color: #FFF;
+            
+        }
+      #tableizer-table tr:hover {
+          background: #0000FF;
+        color:#FFFFFF;
+      }
+    </style>
+     
+    
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="image/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">Jadwal Dokter</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Security RSUB</h1>
+            <p>Selamat Datang di Website Satuan Pengaman Rumah Sakit Universitas Brawijaya</p>
+            <a href="#myInput" class="hero-btn">Jadwal Dokter</a>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Pengamanan dan Pelayanan</h1>
+        <p>Disamping bertugas menjaga kemanan Kami melaksanakan tugas pelayanan dan pengarahan kepada Pasien dan pengunjung Pasien.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="image/sasa.jpg" alt="Inggris">
+                <div class="layer">
+                    <h3>Lalu Lintas</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/london.jpeg" alt="Inggris">
+                <div class="layer">
+                    <h3>Akses Parkir Kendaraan</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="image/dasa.jpeg" alt="Inggris">
+                <div class="layer">
+                    <h3>Parkiran</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+    <h3><input id="myInput" onkeyup="myFunction()" placeholder="Pencarian data.." title="Type in a name" type="text" /></h3>
+    <table id="tableizer-table">
+    <thead><tr class="tableizer-firstrow"><th>PSMF</th><th>Nama Dokter</th><th>Jam</th><th>Ket.</th></tr></thead><tbody>
+          <tr>
+            <td rowspan="4" style="text-align: center;">Anak</td>
+             <td>Dr. Melany Farahdila, Sp.A</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Astri Proborini, Sp.A</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Laurentia Ima Monica, Sp.A</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Daendy Nova S., Sp.A</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="6" style="text-align: center;">IPD</td>
+            <td>Dr. Gatot Ismanoe, S.PD, KPTI, FINASIM</td>
+            
+            <td><br /></td><td></td>
+          </tr>
+          <tr>
+            <td>Dr. Etik Mertianti, S.PD</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Dian Hasanah, S.PD</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Muhammad Anshory, S.PD</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Shinta Oktya, S.PD, K-HOM, FINASIM</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. dr. Nur Samsu, S.PD, K-GH</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="4" style="text-align: center;">Obgyn</td>
+            <td>Dr. Anin Indriani, Sp.OG</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Nirmala Gina, Sp.OG</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Fatmasari Perdana, Sp.OG</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Subandi, Sp.OG (K)</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align: center;">Bedah</td>
+            <td>Dr. M. Raditya Oktifianto, Sp.B</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Brahmantya Sedijono, Sp.B</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="text-align: center;">Jantung</td>
+            <td>Prof. Dr. dr. Djanggan Sargowo, Sp.JP(K)</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Andi Wahjono Adi, Sp.JP(K)</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Putri Annisa Kamila, Sp.JP</td>
+            
+            <td><br /></td><td></td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="text-align: center;">Mata</td>
+            <td>Dr. Faris Nufiarwan, Sp.M</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+             <td>Dr. Yasmin Sani, Sp.M</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Catur Kurnia, Sp.M</td>
+            
+            <td><br /></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="text-align: center;">Paru</td>
+            <td>Dr. Sastia Rakhma, Sp.P</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Ungky Agus Setyawan, Sp.P(K)</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Fitri Indah Sari, Sp.P</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="4" style="text-align: center;">Saraf</td>
+            <td>Dr. Aris Widayati, Sp.S</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Siti Nurlaela, Sp.S</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Nova Titis, Sp.S</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. An Nissa Novrizka Sari, Sp.N</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align: center;">Jiwa</td>
+            <td>Dr. Zuhrotun Ulya, Sp.KJ</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Zain Budi, Sp.KJ</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="text-align: center;">THT</td>
+            <td>Dr. Khuznita Dasa, Sp.THT-KL</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Iriana Maharani, Sp.THT-KL(K)</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>Dr. Ayunita Tri Wirattami, Sp.THT-KL(K)</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Ortopedi</td>
+             <td>Dr. Rakhmad Aditya, Sp.OT</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Andrologi</td>
+            <td>Dr. Dicky Faizal, Sp.And</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Gigi Anak</td>
+            <td>Dr. drg. Moh. Chair E, SU, Sp.KGA</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Penyakit Mulut</td>
+           <td>drg. Miftakhul Cahyani, Sp.PM</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Konservasi Gigi</td>
+            <td>drg. Yuliana Ratna Kumala, Sp.KG</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Bedah Mulut</td>
+           <td>drg. Fitriana, Sp.BM</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td rowspan="3" style="text-align: center;">Kulit Kelamin</td>
+            <td>dr. Martina Rahmi, Sp.KK</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>dr. Marissa Astari, M.Ked, Klin, Sp.DV</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td>dr. Vidya Hana Dwi A.,M.Sc Sp.DV</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Nyeri&nbsp;</td>
+            <td>dr. Ristiawan Muji, Sp.An.KMN</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+          <tr>
+            <td style="text-align: center;">Psikologi Klinis</td>
+            <td>Wulida Azmiyya El Rifqiya, S.Psi, M.Psi</td>
+            
+            <td></td>
+            
+            <td><br /></td>
+          </tr>
+    </tbody>
+    </table>
+    </section>
+
+    <section class="footer">
+        <h4>Tentang Kami</h4>
+        <p>Selamat Datang di Website Satuan Pengaman Rumah Sakit Universitas Brawijaya
+        </p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made By <i class="fa fa-heart-o"></i> Sontrex Brontox</p>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script>
+        function myFunction() {
+     
+       // Declare variables 
+       var input = document.getElementById("myInput");
+       var filter = input.value.trim().toUpperCase();
+       var table = document.getElementById("tableizer-table");
+       var trs = table.tBodies[0].getElementsByTagName("tr");
+       var ths = table.tHead.getElementsByTagName("th");
+       
+       var rowSpan = 1;
+       var rowSpanData = '';
+       
+       // Loop through first tbody's rows
+       for (var i = 0; i < trs.length; i++) {
+     
+         // define the row's cells
+         var tds = trs[i].getElementsByTagName("td");
+     
+         // hide the row
+         trs[i].style.display = "none";
+     
+         // loop through row cells
+         for (var i2 = 0; i2 < tds.length; i2++) {
+     
+           if(filter!=""){
+             if(i2==0 && tds.length == ths.length){
+               rowSpanData = tds[i2].innerHTML;
+             }
+             // if there's a match
+             if (tds[i2].innerHTML.toUpperCase().indexOf(filter) > -1) {
+     
+               // show the row
+               trs[i].style.display = "";
+     
+               if(tds.length == ths.length && tds[0].hasAttribute("rowspan") &&  tds[0].getAttribute("rowspan") != 1){
+                 tds[0].setAttribute("originalRowSpan", tds[0].getAttribute("rowspan"));
+                 tds[0].setAttribute("rowspan", 1);
+               }
+               if(tds.length < ths.length){
+                 var newTd = trs[i].insertCell(0);
+                 newTd.classList.add("removeMe");
+                 newTd.innerHTML= rowSpanData;
+               }
+               // skip to the next row
+               continue;
+     
+             }
+             
+           }else{
+               trs[i].style.display = "";
+               if(tds[i2].hasAttribute("rowspan")){
+                 tds[i2].setAttribute("rowspan", tds[i2].getAttribute("originalRowSpan"));
+               }else if(tds[i2].classList.contains("removeMe")){
+                 trs[i].deleteCell(0);
+               }
+           }
+         }
+       }
+     
+     }
+         
+           </script>
+</body>
+
+</html>
